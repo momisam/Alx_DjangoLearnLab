@@ -10,3 +10,5 @@ class ContentSecurityPolicyMiddleware:
         response = self.get_response(request)
         response["Content-Security-Policy"] = "default-src 'self'"
         return response
+
+
