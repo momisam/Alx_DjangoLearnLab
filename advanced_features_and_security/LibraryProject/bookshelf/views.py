@@ -24,3 +24,7 @@ def edit_book(request):
 @permission_required('bookshelf.can_delete', raise_exception=True)
 def delete_book(request):
     return render(request, 'bookshelf/delete_book.html')
+
+@permission_required('bookshelf.can_view', raise_exception=True)
+def book_list(request):
+    return render(request, 'bookshelf/book_list.html')
