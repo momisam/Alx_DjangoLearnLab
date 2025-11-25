@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import permission_required
 from django.db.models import Q
 from .models import Book
 from django import forms
+from .forms import ExampleForm
 
 
 # -----------------------------------------------------
